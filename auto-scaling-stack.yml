@@ -1,11 +1,12 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: >
-  Lab1 - Auto Scaling Web Tier
+  Lab1 - Auto Scaling Web 
   Provisions a multi-AZ VPC with public/private subnets, an internet-facing ALB,
   a Regional NAT Gateway, an EC2 Auto Scaling Group with CPU-based scale-out,
   and a simple Apache web app that displays the instance ID on every request.
-
+#-------------------------------
 # PARAMETERS
+#----------------------------
 
 Parameters:
   LatestAmiId:
@@ -19,7 +20,6 @@ Parameters:
     AllowedValues: [t3.micro, t3.small, t3.medium]
     Description: EC2 instance type for web servers
 
-# MAPPINGS
 
 Mappings:
   Network:
