@@ -337,7 +337,7 @@ Resources:
             </html>
             HTML
 
-            # Start and enable Apache
+            # Start and enable Apache and enable this 
             systemctl enable --now httpd
         TagSpecifications:
           - ResourceType: instance
@@ -345,7 +345,6 @@ Resources:
               - Key: Name
                 Value: !Sub "${AWS::StackName}-web"
 
-  # Auto Scaling Group
   WebServerASG:
     Type: AWS::AutoScaling::AutoScalingGroup
     DependsOn: NatGateway
@@ -368,8 +367,9 @@ Resources:
         - Key: Name
           Value: !Sub "${AWS::StackName}-asg"
           PropagateAtLaunch: true
-
-  # Scaling policy - target tracking on average CPU utilization
+  # -----------------------------------------------------------
+  # Scaling policy , target tracking on average CPU utilization
+  #-------------------------------------------------------------
   ScaleOutPolicy:
     Type: AWS::AutoScaling::ScalingPolicy
     Properties:
