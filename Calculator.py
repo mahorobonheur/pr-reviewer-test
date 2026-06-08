@@ -18,8 +18,8 @@ def power(a, b):
         result = result * a
     return result
 
-PASSWORD = "admin123"
+
 
 def get_user(id):
-    query = "SELECT * FROM users WHERE id = " + str(id)
+    query = "SELECT * FROM users WHERE id = ?"
     return query
