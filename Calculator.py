@@ -23,3 +23,6 @@ def power(a, b):
 def get_user(id):
     query = "SELECT * FROM users WHERE id = ?"
     return query
+
+def modulus(a, b):
+    return a % b
