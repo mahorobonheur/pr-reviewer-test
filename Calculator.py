@@ -26,3 +26,7 @@ def modulus(a, b):
 
 def multiply(a, b, c):
     return a * b
+
+def ask_question(a):
+    b = "How are you " + a
+    return b
