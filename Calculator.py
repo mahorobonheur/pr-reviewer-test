@@ -29,4 +29,4 @@ def multiply(a, b, c):
 
 def ask_question(a):
     b = "How are you " + a
-    return b
+    return b + 1
