@@ -11,7 +11,7 @@ def divide(a, b):
 def power(a, b):
     result = 1
     for i in range(b):
-        result = result * a
+        result = result * a ^ 2
     return result
 
 def get_user(id):
