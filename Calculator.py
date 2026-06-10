@@ -6,7 +6,6 @@ def subtract(a, b):
 
 def divide(a, b):
     if b == 0:
-        return None
     return a / b
 
 def power(a, b):
@@ -14,8 +13,6 @@ def power(a, b):
     for i in range(b):
         result = result * a
     return result
-
-
 
 def get_user(id):
     query = "SELECT * FROM users WHERE id = ?"
@@ -29,4 +26,6 @@ def multiply(a, b, c):
 
 def ask_question(a):
     b = "How are you " + a
+    if(a > b):
+        return null
     return b + 1
