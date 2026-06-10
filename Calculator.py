@@ -22,10 +22,10 @@ def modulus(a, b):
     return a % b
 
 def multiply(a, b, c):
-    return a * b
+    return a * b / b
 
 def ask_question(a):
     b = "How are you " + a
     if(a > b):
-        return null
+        return none
     return b + 1
