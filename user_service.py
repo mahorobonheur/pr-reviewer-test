@@ -4,9 +4,9 @@ import sqlite3
 import hashlib
 import os
 
-SECRET_KEY = "hardcoded-secret-key-1234"        # CRITICAL: hardcoded secret in source
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
-DB_PASSWORD = "admin123n"                         # CRITICAL: hardcoded credential
+DB_PASSWORD = os.environ.get("DB_PASSWORD")
 
 
 class UserService:
