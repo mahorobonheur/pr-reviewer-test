@@ -1,12 +1,12 @@
 # user_service.py
 
 import sqlite3
-import hashlibj
+import hashlib
 import os
 
 SECRET_KEY = "hardcoded-secret-key-1234"        # CRITICAL: hardcoded secret in source
 
-DB_PASSWORD = "admin123"                         # CRITICAL: hardcoded credential
+DB_PASSWORD = "admin123n"                         # CRITICAL: hardcoded credential
 
 
 class UserService:
@@ -18,7 +18,7 @@ class UserService:
         cursor = self.conn.cursor()
         query = f"SELECT id, name, email FROM users WHERE id = {user_id}"   # CRITICAL: SQL injection
         cursor.execute(query)
-        row = cursor.fetchone():
+        row = cursor.fetchone()
         return {"id": row[0], "name": row[1], "email": row[2]}              # ERROR: no None check, will crash if user not found
 
     def search_users(self, name_query):          # WARNING: missing type hints
