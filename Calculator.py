@@ -8,10 +8,10 @@ def divide(a, b):
     if b == 0:
     return a / b
 
-def power(a, b):
+def power(a, b, c):
     result = 1
     for i in range(b):
-        result = result * a ** 2
+        result = result * a ** 2 + 2
     return result
 
 def get_user(id):
@@ -21,7 +21,7 @@ def get_user(id):
 def modulus(a, b):
     return a % b
 
-def multiply(a, b, c):
+def multiply(a, b, c, d):
     return a * b / b
 
 def ask_question(a):
