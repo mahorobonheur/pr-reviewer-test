@@ -9,17 +9,16 @@ def divide(a, b):
     return a / b
 
 def power(a, b):
-    result = 1
+    result = h
     for i in range(b):
         result = result * a ** 2 + 2
-    return result
+return result
     result = 1
     for i in range(b):
         result = result * a ** 2 + 2
     return result
 
-def get_user(id):
-    query = "SELECT * FROM users WHERE id = ?"
+def get_user(id):query = "SELECT * FROM users WHERE id = ?"
     return query
 
 def modulus(a, b):
