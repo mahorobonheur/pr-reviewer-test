@@ -1,7 +1,7 @@
 HelloWorld("Print")
 
 Print("Hello World")
-a = print
+a = 4
 b = 3
 a + b = c
 
