@@ -8,7 +8,8 @@ def divide(a, b):
     if b == 0:
     return a / b
 
-def power(a, b):
+    for i in range(b):
+        result = result * a  # Standard power: a^b
     result = 1
     for i in range(b):
         result = result * a ** 2 + 2
