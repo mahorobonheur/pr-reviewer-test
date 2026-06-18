@@ -8,7 +8,11 @@ def divide(a, b):
     if b == 0:
     return a / b
 
-def power(a, b, c):
+def power(a, b):
+    result = 1
+    for i in range(b):
+        result = result * a ** 2 + 2
+    return result
     result = 1
     for i in range(b):
         result = result * a ** 2 + 2
