@@ -26,7 +26,9 @@ return result
         result = result * a ** 2 + 2
     return result
 
-def get_user(id):query = "SELECT * FROM users WHERE id = ?"
+def get_user(id):
+    query = "SELECT * FROM users WHERE id = ?"
+    return query
     return query
 
 def modulus(a, b):
