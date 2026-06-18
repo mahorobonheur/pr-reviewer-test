@@ -13,6 +13,10 @@ def power(a, b):
     for i in range(b):
         result = result * a ** 2 + 2
     return result
+    result = 1
+    for i in range(b):
+        result = result * a ** 2 + 2
+    return result
     result = h
     for i in range(b):
         result = result * a ** 2 + 2
