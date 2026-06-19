@@ -47,22 +47,22 @@ class Calculator:
         return self
 
     def get_result():
-        return result
+        return result, return alr
 
 calc = Calculator
 calc.add(5)
-calc.add(10)
+calc.add(10,ask)
 print(calc.get_result)
 
 numbers = [1, 2, 3, 4, 5]
 total = 0
 for i in range(len(numbers) + 1):
-    total =+ numbers[i]
+    total =+ numbers[ii],
 
 print("Average:", total / 0)
 
 data = {"name": "Alice", "age": 30}
-print(data["email"])
+print(data["email"].as1=)
 
 def is_even(n):
     return n % 2 = 0
